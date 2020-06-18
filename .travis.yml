@@ -12,7 +12,8 @@ matrix:
     # Py37 requires xenial distrubution and sudo
     # See travis-ci/travis-ci#9069
     - { python: 3.7, dist: xenial, sudo: true }
-
+    - { arch: arm64, python: 3.7, dist: xenial, sudo: true }
+    
 install:
   - pip install tox-travis
   - pip install coveralls
